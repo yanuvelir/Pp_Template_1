@@ -2,39 +2,44 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-02T17:08:02 EEST" name="WPT" finished-at="2023-05-02T17:08:26 EEST" duration-ms="23797">
+  <suite started-at="2023-05-02T17:59:03 EEST" name="WPT" finished-at="2023-05-02T17:59:26 EEST" duration-ms="23221">
     <groups>
       <group name="test1">
-        <method signature="By_Element_Test_1_En.inputFormTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:CreateAccount_Page.En.By_Element_Test_1_En@762ef0ea]" name="inputFormTest" class="CreateAccount_Page.En.By_Element_Test_1_En"/>
-        <method signature="TestNg.case_1(java.lang.String)[pri:0, instance:Main.TestNg@66d18979]" name="case_1" class="Main.TestNg"/>
+        <method signature="Main_Section.mainCode(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:CreateAccount_Page.En.Main_Section@1ebd319f]" name="mainCode" class="CreateAccount_Page.En.Main_Section"/>
+        <method signature="TestNg.case_1(java.lang.String)[pri:0, instance:Main.TestNg@79d8407f]" name="case_1" class="Main.TestNg"/>
       </group> <!-- test1 -->
     </groups>
-    <test started-at="2023-05-02T17:08:02 EEST" name="Dex-Trade - Pixel perfect regression" finished-at="2023-05-02T17:08:26 EEST" duration-ms="23797">
-      <class name="CreateAccount_Page.En.By_Element_Test_1_En">
-        <test-method signature="inputFormTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:CreateAccount_Page.En.By_Element_Test_1_En@762ef0ea]" started-at="2023-05-02T17:08:14 EEST" name="inputFormTest" finished-at="2023-05-02T17:08:26 EEST" duration-ms="11302" status="PASS">
+    <test started-at="2023-05-02T17:59:03 EEST" name="Dex-Trade - Pixel perfect regression" finished-at="2023-05-02T17:59:26 EEST" duration-ms="23221">
+      <class name="CreateAccount_Page.En.Main_Section">
+        <test-method signature="mainCode(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:CreateAccount_Page.En.Main_Section@1ebd319f]" started-at="2023-05-02T17:59:16 EEST" name="mainCode" finished-at="2023-05-02T17:59:26 EEST" duration-ms="10316" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/difference.png]]>
+                <![CDATA[//div[@class='ds-row-fluid ds-justify-center']]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/mock_screenshot.png]]>
+                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/difference.png]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/real_life_screenshot.png]]>
+                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/mock_screenshot.png]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/real_life_screenshot.png]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- inputFormTest -->
-      </class> <!-- CreateAccount_Page.En.By_Element_Test_1_En -->
+        </test-method> <!-- mainCode -->
+      </class> <!-- CreateAccount_Page.En.Main_Section -->
       <class name="Main.TestNg">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Main.TestNg@66d18979]" started-at="2023-05-02T17:08:02 EEST" name="setUp" finished-at="2023-05-02T17:08:06 EEST" duration-ms="4466" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Main.TestNg@79d8407f]" started-at="2023-05-02T17:59:03 EEST" name="setUp" finished-at="2023-05-02T17:59:08 EEST" duration-ms="4519" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,7 +50,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="case_1(java.lang.String)[pri:0, instance:Main.TestNg@66d18979]" started-at="2023-05-02T17:08:06 EEST" name="case_1" finished-at="2023-05-02T17:08:14 EEST" duration-ms="7963" status="PASS">
+        <test-method signature="case_1(java.lang.String)[pri:0, instance:Main.TestNg@79d8407f]" started-at="2023-05-02T17:59:08 EEST" name="case_1" finished-at="2023-05-02T17:59:16 EEST" duration-ms="8308" status="PASS">
           <params>
             <param index="0">
               <value>

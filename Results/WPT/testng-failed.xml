@@ -4,16 +4,16 @@
   <test thread-count="5" name="Dex-Trade - Pixel perfect regression(failed)">
     <parameter name="CreateAccount_page_Test1" value="https://dex-trade.com/sign-up"/>
     <parameter name="CreateAccount_Test_3_var" value="//div[@class=&#039;auth-wrapper header-border&#039;]"/>
-    <parameter name="RealFile1_T2_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/real_life_screenshot.png"/>
     <parameter name="RealFile_T2_1_En" value="Screenshots\EnChrome\Screenshots_Test_2_1\real_life_screenshot.png"/>
     <parameter name="Difference_T2_1_En" value="Screenshots\EnChrome\Screenshots_Test_2_1\difference.png"/>
     <parameter name="preferredBrowser" value="Chrome"/>
     <parameter name="StartUrlLogin" value="https://dex-trade.com"/>
-    <parameter name="MockFile1_T2_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/mock_screenshot.png"/>
     <parameter name="MockFile_T3_En" value="Screenshots\EnChrome\Screenshots_Test_3\mock_screenshot.png"/>
     <parameter name="MockFile_T1_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/mock_screenshot.png"/>
+    <parameter name="MockFile_T2_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/mock_screenshot.png"/>
     <parameter name="RealFile_T3_En" value="Screenshots\EnChrome\Screenshots_Test_3\real_life_screenshot.png"/>
     <parameter name="RealFile_T1_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/real_life_screenshot.png"/>
+    <parameter name="RealFile_T2_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/real_life_screenshot.png"/>
     <parameter name="CreateAccount_Test_2_var" value="//div[@class=&#039;ds-row-fluid ds-justify-center&#039;]"/>
     <parameter name="Difference_T1_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/difference.png"/>
     <parameter name="Difference_T2_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/difference.png"/>
@@ -21,11 +21,11 @@
     <parameter name="Difference_T3_En" value="Screenshots\EnChrome\Screenshots_Test_3\difference.png"/>
     <parameter name="CreateAccount_Test_1_var" value="(//div[@class=&#039;auth-container&#039;])[3]"/>
     <classes>
-      <class name="CreateAccount_Page.En.By_Element_Test_1_En">
+      <class name="CreateAccount_Page.En.Main_Section">
         <methods>
-          <include name="inputFormTest" invocation-numbers="0"/>
+          <include name="mainCode" invocation-numbers="0"/>
         </methods>
-      </class> <!-- CreateAccount_Page.En.By_Element_Test_1_En -->
+      </class> <!-- CreateAccount_Page.En.Main_Section -->
     </classes>
   </test> <!-- Dex-Trade - Pixel perfect regression(failed) -->
 </suite> <!-- Failed suite [WPT] -->

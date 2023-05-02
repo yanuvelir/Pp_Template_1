@@ -1,6 +1,6 @@
 package CreateAccount_Page.En;
 
-public class InputFormTestConfig {
+public class Input_Form_TestConfig {
     public static String EMAIL_ADDRESS;
     public static String PASSWORD;
     public static String SIGN_UP_PAGE;

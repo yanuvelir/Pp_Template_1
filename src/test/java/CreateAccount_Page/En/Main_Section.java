@@ -21,42 +21,31 @@ import java.time.Duration;
 
 import static Main.TestNg.driver;
 
-public class By_Element_Test_1_En {
+public class Main_Section {
 
-    @Parameters({"Difference_T1_En", "MockFile_T1_En", "RealFile_T1_En"})
-    @Test(groups = {"test1"}, testName = "En_Test_1_By_Element")
-    public static void inputFormTest(String Difference_T1_En,
-                         String MockFile_T1_En, String RealFile_T1_En) throws InterruptedException, IOException {
+    @Parameters({"CreateAccount_Test_2_var", "Difference_T2_En", "MockFile_T2_En", "RealFile_T2_En"})
+    @Test(groups = {"test1"}, testName = "Test_2_By_Element")
+    public void mainCode(String CreateAccount_Test_2_var, String Difference_T2_En,
+                         String MockFile_T2_En, String RealFile_T2_En) throws InterruptedException, IOException {
 
-        System.out.println("*** Pixel_Perfect By_Element Test_1 folder=Screenshots***");
+        System.out.println("*** Pixel_Perfect By_Element folder=Screenshots1***");
         // Set up a WebDriverWait instance with a timeout (in seconds)
            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // 10 seconds timeout
 
         // Переход на начальную страницу
-//        driver.get(CreateAccount_page_Test1);
-        driver.get(InputFormTestConfig.SIGN_UP_PAGE);
-        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("sign-link")));
+        driver.get(Main_Section_TestConfig.SIGN_UP_PAGE);
 
-        Thread.sleep(1000);
-        // Find elements - Logo and password"
-        WebElement email = driver.findElement(By.id("email"));
-        email.sendKeys(InputFormTestConfig.EMAIL_ADDRESS);
-//        email.sendKeys(s);
-//        Create_Account_pg_Email_and_Password_Form createAccInput = new Create_Account_pg_Email_and_Password_Form();
-//        createAccInput.checkInputFields_inputsAreFilledIn_PpNotChanges()
-       WebElement password = driver.findElement(By.id("password"));
-        password.sendKeys(InputFormTestConfig.PASSWORD);
-        WebElement eyeButton = driver.findElement(By.xpath("//button[@data-test-id=\"viewBox\"]"));
-        eyeButton.click();
-        Thread.sleep(1500);
+        WebElement element = wait.until
+                (ExpectedConditions.visibilityOfElementLocated(By.className("sign-link")));
 
-//        WebElement inputWrapper = driver.findElement(By.xpath(CreateAccount_Test_1_var));//"input-wrap"
-        WebElement inputWrapper = driver.findElement(By.xpath(InputFormTestConfig.ELEMENT_FOR_TEST));//"input-wrap"
+        Thread.sleep(2000);
+
+        WebElement ds_row_fluid = driver.findElement(By.xpath(Main_Section_TestConfig.ELEMENT_FOR_TEST));//"input-wrap"
 
         try {
-            File screenshotFile = inputWrapper.getScreenshotAs(OutputType.FILE);
+            File screenshotFile = ds_row_fluid.getScreenshotAs(OutputType.FILE);
             File destinationFile = new File
-                    (RealFile_T1_En);
+                    (RealFile_T2_En);
             Files.move(screenshotFile.toPath(), destinationFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
             if (!destinationFile.exists()) {
                 destinationFile.createNewFile();
@@ -65,8 +54,8 @@ public class By_Element_Test_1_En {
             System.out.println("*** File exists ***");
         }
 
-        BufferedImage image1 = ImageIO.read(new File(MockFile_T1_En));
-        BufferedImage image2 = ImageIO.read(new File(RealFile_T1_En));
+        BufferedImage image1 = ImageIO.read(new File(MockFile_T2_En));
+        BufferedImage image2 = ImageIO.read(new File(RealFile_T2_En));
 
         // Resize the images to the same size for comparison
         int width = Math.min(image1.getWidth(), image2.getWidth());
@@ -86,7 +75,7 @@ public class By_Element_Test_1_En {
         double brightnessDifference = Math.abs(averageBrightness1 - averageBrightness2);
 
         // Print the result
-        if (brightnessDifference < 0.005) {
+        if (brightnessDifference < 0.0005) {
             System.out.println("The two images are similar.");
         } else {
             System.out.println("The two images are not similar.");
@@ -121,13 +110,13 @@ public class By_Element_Test_1_En {
             graphics.dispose();
 
             // Save the difference image to a file
-            File differenceFile = new File(Difference_T1_En);
+            File differenceFile = new File(Difference_T2_En);
             ImageIO.write(differenceImage, "png", differenceFile);
 
             // Print a message indicating where the difference was found
             System.out.println("Difference found. See the file " + differenceFile.getAbsolutePath() + " for details.");
         }
-        Assert.assertTrue(brightnessDifference < 0.005, "*** Images are not similar ***");
+        Assert.assertTrue(brightnessDifference < 0.0005, "*** Images are not similar ***");
         Thread.sleep(500);
 //        driver.quit();
     }

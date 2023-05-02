@@ -28,8 +28,8 @@
             <parameter name="MockFile_T1_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/mock_screenshot.png"/>
             <!--            Test2_En Screenshots paths-->
             <parameter name="Difference_T2_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/difference.png"/>
-            <parameter name="RealFile1_T2_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/real_life_screenshot.png"/>
-            <parameter name="MockFile1_T2_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/mock_screenshot.png"/>
+            <parameter name="RealFile_T2_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/real_life_screenshot.png"/>
+            <parameter name="MockFile_T2_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/mock_screenshot.png"/>
             <!--            Test2_1_En Screenshots paths-->
             <parameter name="Difference_T2_1_En" value="Screenshots\EnChrome\Screenshots_Test_2_1\difference.png"/>
             <parameter name="RealFile_T2_1_En" value="Screenshots\EnChrome\Screenshots_Test_2_1\real_life_screenshot.png"/>
@@ -43,8 +43,8 @@
         <classes>
             <class name="Main.TestNg"/>
 <!--Create account classes for RUN-->
-            <class name="CreateAccount_Page.En.By_Element_Test_1_En"/>
-<!--            <class name="CreateAccount_Page.En.By_Element_Test_2_En"/>-->
+<!--            <class name="CreateAccount_Page.En.Input_Form_Credentials"/>-->
+            <class name="CreateAccount_Page.En.Main_Section"/>
 <!--            <class name="CreateAccount_Page.En.By_Page_Test_2_1_En"/>-->
 <!--            <class name="CreateAccount_Page.En.By_Element_Test_3_En"/>-->
         </classes>
