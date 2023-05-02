@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WPT">
+
+        <test name="Dex-Trade - Pixel perfect regression">
+
+<!--Selected browser Browser select-->
+<!--            <parameter name="preferredBrowser" value="Firefox"/>-->
+            <parameter name="preferredBrowser" value="Chrome"/>
+
+<!--          Start page url  -->
+            <parameter name="StartUrlLogin" value="https://dex-trade.com"/>
+
+<!--            Pages -->
+            <parameter name="CreateAccount_page_Test1" value="https://dex-trade.com/sign-up"/>
+
+
+<!--            Create Account page elements locators variable -->
+            <parameter name="CreateAccount_Test_1_var" value="(//div[@class='auth-container'])[3]"/>
+            <parameter name="CreateAccount_Test_2_var" value="//div[@class='ds-row-fluid ds-justify-center']"/>
+            <parameter name="CreateAccount_Test_3_var" value="//div[@class='auth-wrapper header-border']"/>
+
+<!--            Create account page screenshots paths-->
+<!--            English-->
+            <!--            Test1_En Screenshots paths-->
+            <parameter name="Difference_T1_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/difference.png"/>
+            <parameter name="RealFile_T1_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/real_life_screenshot.png"/>
+            <parameter name="MockFile_T1_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/mock_screenshot.png"/>
+            <!--            Test2_En Screenshots paths-->
+            <parameter name="Difference_T2_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/difference.png"/>
+            <parameter name="RealFile1_T2_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/real_life_screenshot.png"/>
+            <parameter name="MockFile1_T2_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/mock_screenshot.png"/>
+            <!--            Test2_1_En Screenshots paths-->
+            <parameter name="Difference_T2_1_En" value="Screenshots\EnChrome\Screenshots_Test_2_1\difference.png"/>
+            <parameter name="RealFile_T2_1_En" value="Screenshots\EnChrome\Screenshots_Test_2_1\real_life_screenshot.png"/>
+            <parameter name="MockFile_T2_1_En" value="Screenshots\EnChrome\Screenshots_Test_2_1\mock_screenshot.png"/>
+            <!--            Test3_En Screenshots paths-->
+            <parameter name="Difference_T3_En" value="Screenshots\EnChrome\Screenshots_Test_3\difference.png"/>
+            <parameter name="RealFile_T3_En" value="Screenshots\EnChrome\Screenshots_Test_3\real_life_screenshot.png"/>
+            <parameter name="MockFile_T3_En" value="Screenshots\EnChrome\Screenshots_Test_3\mock_screenshot.png"/>
+
+
+        <classes>
+            <class name="Main.TestNg"/>
+<!--Create account classes for RUN-->
+            <class name="CreateAccount_Page.En.By_Element_Test_1_En"/>
+<!--            <class name="CreateAccount_Page.En.By_Element_Test_2_En"/>-->
+<!--            <class name="CreateAccount_Page.En.By_Page_Test_2_1_En"/>-->
+<!--            <class name="CreateAccount_Page.En.By_Element_Test_3_En"/>-->
+        </classes>
+
+        </test>
+
+</suite>

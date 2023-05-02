@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-02T14:11:26 EEST" name="WPT" finished-at="2023-05-02T14:11:50 EEST" duration-ms="24235">
+    <groups>
+      <group name="test1">
+        <method signature="By_Element_Test_1_En.mainCode(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:CreateAccount_Page.En.By_Element_Test_1_En@15ca7889]" name="mainCode" class="CreateAccount_Page.En.By_Element_Test_1_En"/>
+        <method signature="TestNg.case_1(java.lang.String)[pri:0, instance:Main.TestNg@1e66f1f5]" name="case_1" class="Main.TestNg"/>
+      </group> <!-- test1 -->
+    </groups>
+    <test started-at="2023-05-02T14:11:26 EEST" name="Dex-Trade - Pixel perfect regression" finished-at="2023-05-02T14:11:50 EEST" duration-ms="24235">
+      <class name="CreateAccount_Page.En.By_Element_Test_1_En">
+        <test-method signature="mainCode(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:CreateAccount_Page.En.By_Element_Test_1_En@15ca7889]" started-at="2023-05-02T14:11:38 EEST" name="mainCode" finished-at="2023-05-02T14:11:50 EEST" duration-ms="11433" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dex-trade.com/sign-up]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[(//div[@class='auth-container'])[3]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/difference.png]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/mock_screenshot.png]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/real_life_screenshot.png]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainCode -->
+      </class> <!-- CreateAccount_Page.En.By_Element_Test_1_En -->
+      <class name="Main.TestNg">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Main.TestNg@1e66f1f5]" started-at="2023-05-02T14:11:26 EEST" name="setUp" finished-at="2023-05-02T14:11:30 EEST" duration-ms="4763" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="case_1(java.lang.String)[pri:0, instance:Main.TestNg@1e66f1f5]" started-at="2023-05-02T14:11:30 EEST" name="case_1" finished-at="2023-05-02T14:11:38 EEST" duration-ms="7973" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dex-trade.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case_1 -->
+      </class> <!-- Main.TestNg -->
+    </test> <!-- Dex-Trade - Pixel perfect regression -->
+  </suite> <!-- WPT -->
+</testng-results>
