@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-02T18:33:50 EEST" name="WPT" finished-at="2023-05-02T18:34:12 EEST" duration-ms="22860">
+  <suite started-at="2023-05-02T18:52:25 EEST" name="WPT" finished-at="2023-05-02T18:53:13 EEST" duration-ms="47234">
     <groups>
       <group name="test1">
-        <method signature="Full_Page.mainCode(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:CreateAccount_Page.En.Full_Page@175b9425]" name="mainCode" class="CreateAccount_Page.En.Full_Page"/>
-        <method signature="TestNg.case_1(java.lang.String)[pri:0, instance:Main.TestNg@399c4be1]" name="case_1" class="Main.TestNg"/>
+        <method signature="Full_Page.mainCode(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:CreateAccount_Page.En.Full_Page@6e509ffa]" name="mainCode" class="CreateAccount_Page.En.Full_Page"/>
+        <method signature="Header.mainCode(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:CreateAccount_Page.En.Header@2898ac89]" name="mainCode" class="CreateAccount_Page.En.Header"/>
+        <method signature="Input_Form.inputFormTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:CreateAccount_Page.En.Input_Form@7a675056]" name="inputFormTest" class="CreateAccount_Page.En.Input_Form"/>
+        <method signature="Main_Section.mainCode(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:CreateAccount_Page.En.Main_Section@d21a74c]" name="mainCode" class="CreateAccount_Page.En.Main_Section"/>
+        <method signature="TestNg.case_1(java.lang.String)[pri:0, instance:Main.TestNg@4e50c791]" name="case_1" class="Main.TestNg"/>
       </group> <!-- test1 -->
     </groups>
-    <test started-at="2023-05-02T18:33:50 EEST" name="Dex-Trade - Pixel perfect regression" finished-at="2023-05-02T18:34:12 EEST" duration-ms="22860">
+    <test started-at="2023-05-02T18:52:25 EEST" name="Dex-Trade - Pixel perfect regression" finished-at="2023-05-02T18:53:13 EEST" duration-ms="47234">
       <class name="CreateAccount_Page.En.Full_Page">
-        <test-method signature="mainCode(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:CreateAccount_Page.En.Full_Page@175b9425]" started-at="2023-05-02T18:34:02 EEST" name="mainCode" finished-at="2023-05-02T18:34:12 EEST" duration-ms="10539" status="PASS">
+        <test-method signature="mainCode(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:CreateAccount_Page.En.Full_Page@6e509ffa]" started-at="2023-05-02T18:52:53 EEST" name="mainCode" finished-at="2023-05-02T18:53:02 EEST" duration-ms="9192" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,8 +36,59 @@
           </reporter-output>
         </test-method> <!-- mainCode -->
       </class> <!-- CreateAccount_Page.En.Full_Page -->
+      <class name="CreateAccount_Page.En.Header">
+        <test-method signature="mainCode(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:CreateAccount_Page.En.Header@2898ac89]" started-at="2023-05-02T18:53:02 EEST" name="mainCode" finished-at="2023-05-02T18:53:13 EEST" duration-ms="10526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_3/difference.png]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_3/mock_screenshot.png]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_3/real_life_screenshot.png]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainCode -->
+      </class> <!-- CreateAccount_Page.En.Header -->
+      <class name="CreateAccount_Page.En.Main_Section">
+        <test-method signature="mainCode(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:CreateAccount_Page.En.Main_Section@d21a74c]" started-at="2023-05-02T18:52:44 EEST" name="mainCode" finished-at="2023-05-02T18:52:53 EEST" duration-ms="9189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//div[@class='ds-row-fluid ds-justify-center']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/difference.png]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/mock_screenshot.png]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/real_life_screenshot.png]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainCode -->
+      </class> <!-- CreateAccount_Page.En.Main_Section -->
       <class name="Main.TestNg">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Main.TestNg@399c4be1]" started-at="2023-05-02T18:33:50 EEST" name="setUp" finished-at="2023-05-02T18:33:54 EEST" duration-ms="4349" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Main.TestNg@4e50c791]" started-at="2023-05-02T18:52:25 EEST" name="setUp" finished-at="2023-05-02T18:52:29 EEST" duration-ms="3295" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,7 +99,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="case_1(java.lang.String)[pri:0, instance:Main.TestNg@399c4be1]" started-at="2023-05-02T18:33:54 EEST" name="case_1" finished-at="2023-05-02T18:34:02 EEST" duration-ms="7889" status="PASS">
+        <test-method signature="case_1(java.lang.String)[pri:0, instance:Main.TestNg@4e50c791]" started-at="2023-05-02T18:52:29 EEST" name="case_1" finished-at="2023-05-02T18:52:33 EEST" duration-ms="4825" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,6 +111,29 @@
           </reporter-output>
         </test-method> <!-- case_1 -->
       </class> <!-- Main.TestNg -->
+      <class name="CreateAccount_Page.En.Input_Form">
+        <test-method signature="inputFormTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:CreateAccount_Page.En.Input_Form@7a675056]" started-at="2023-05-02T18:52:33 EEST" name="inputFormTest" finished-at="2023-05-02T18:52:44 EEST" duration-ms="10159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/difference.png]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/mock_screenshot.png]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/real_life_screenshot.png]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputFormTest -->
+      </class> <!-- CreateAccount_Page.En.Input_Form -->
     </test> <!-- Dex-Trade - Pixel perfect regression -->
   </suite> <!-- WPT -->
 </testng-results>

@@ -8,24 +8,24 @@
     <parameter name="Difference_T2_1_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2_1/difference.png"/>
     <parameter name="preferredBrowser" value="Chrome"/>
     <parameter name="StartUrlLogin" value="https://dex-trade.com"/>
-    <parameter name="MockFile_T3_En" value="Screenshots\EnChrome\Screenshots_Test_3\mock_screenshot.png"/>
+    <parameter name="MockFile_T3_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_3/mock_screenshot.png"/>
     <parameter name="MockFile_T1_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/mock_screenshot.png"/>
     <parameter name="MockFile_T2_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/mock_screenshot.png"/>
-    <parameter name="RealFile_T3_En" value="Screenshots\EnChrome\Screenshots_Test_3\real_life_screenshot.png"/>
+    <parameter name="RealFile_T3_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_3/real_life_screenshot.png"/>
     <parameter name="RealFile_T1_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/real_life_screenshot.png"/>
     <parameter name="RealFile_T2_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/real_life_screenshot.png"/>
     <parameter name="CreateAccount_Test_2_var" value="//div[@class=&#039;ds-row-fluid ds-justify-center&#039;]"/>
     <parameter name="Difference_T1_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_1/difference.png"/>
     <parameter name="Difference_T2_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2/difference.png"/>
     <parameter name="MockFile_T2_1_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_2_1/mock_screenshot.png"/>
-    <parameter name="Difference_T3_En" value="Screenshots\EnChrome\Screenshots_Test_3\difference.png"/>
+    <parameter name="Difference_T3_En" value="Screenshots/Create_Account_page/EnChrome/Screenshots_Test_3/difference.png"/>
     <parameter name="CreateAccount_Test_1_var" value="(//div[@class=&#039;auth-container&#039;])[3]"/>
     <classes>
-      <class name="CreateAccount_Page.En.Full_Page">
+      <class name="CreateAccount_Page.En.Header">
         <methods>
           <include name="mainCode" invocation-numbers="0"/>
         </methods>
-      </class> <!-- CreateAccount_Page.En.Full_Page -->
+      </class> <!-- CreateAccount_Page.En.Header -->
     </classes>
   </test> <!-- Dex-Trade - Pixel perfect regression(failed) -->
 </suite> <!-- Failed suite [WPT] -->

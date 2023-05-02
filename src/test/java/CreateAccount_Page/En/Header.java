@@ -21,26 +21,26 @@ import java.time.Duration;
 
 import static Main.TestNg.driver;
 
-public class By_Element_Test_3_En {
+public class Header {
 
-    @Parameters({"CreateAccount_page", "CreateAccount_Test_3_var", "Difference_T3_En", "MockFile_T3_En", "RealFile_T3_En"})
+    @Parameters({"Difference_T3_En", "MockFile_T3_En", "RealFile_T3_En"})
     @Test(groups = {"test1"}, testName = "Test_3_By_Element")
-    public void mainCode(String CreateAccount_page, String CreateAccount_Test_3_var, String Difference_T3_En,
-                         String MockFile_T3_En, String RealFile_T3_En) throws InterruptedException, IOException {
+    public void mainCode(String Difference_T3_En, String MockFile_T3_En, String RealFile_T3_En)
+            throws InterruptedException, IOException {
 
         System.out.println("*** Pixel_Perfect By_Element folder=Screenshots2***");
         // Set up a WebDriverWait instance with a timeout (in seconds)
            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // 10 seconds timeout
 
         // Переход на начальную страницу
-        driver.get("https://dex-trade.com/sign-up");
+        driver.get(Header_TestConfig.SIGN_UP_PAGE);
 
         WebElement element = wait.until
                 (ExpectedConditions.visibilityOfElementLocated(By.className("sign-link")));
 
         Thread.sleep(1000);
 
-        WebElement header = driver.findElement(By.xpath(CreateAccount_Test_3_var));//"input-wrap"
+        WebElement header = driver.findElement(By.xpath(Header_TestConfig.ELEMENT_FOR_TEST));//"input-wrap"
         Thread.sleep(1000);
 
         try {
