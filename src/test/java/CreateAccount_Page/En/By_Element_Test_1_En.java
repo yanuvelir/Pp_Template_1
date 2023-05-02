@@ -23,9 +23,9 @@ import static Main.TestNg.driver;
 
 public class By_Element_Test_1_En {
 
-    @Parameters({"CreateAccount_page_Test1", "CreateAccount_Test_1_var", "Difference_T1_En", "MockFile_T1_En", "RealFile_T1_En"})
+    @Parameters({"Difference_T1_En", "MockFile_T1_En", "RealFile_T1_En"})
     @Test(groups = {"test1"}, testName = "En_Test_1_By_Element")
-    public static void mainCode( String CreateAccount_page_Test1, String CreateAccount_Test_1_var, String Difference_T1_En,
+    public static void inputFormTest(String Difference_T1_En,
                          String MockFile_T1_En, String RealFile_T1_En) throws InterruptedException, IOException {
 
         System.out.println("*** Pixel_Perfect By_Element Test_1 folder=Screenshots***");
@@ -34,24 +34,24 @@ public class By_Element_Test_1_En {
 
         // Переход на начальную страницу
 //        driver.get(CreateAccount_page_Test1);
-        driver.get(TestConfig.SIGN_UP_PAGE);
+        driver.get(InputFormTestConfig.SIGN_UP_PAGE);
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("sign-link")));
 
         Thread.sleep(1000);
         // Find elements - Logo and password"
         WebElement email = driver.findElement(By.id("email"));
-        email.sendKeys(TestConfig.EMAIL_ADDRESS);
+        email.sendKeys(InputFormTestConfig.EMAIL_ADDRESS);
 //        email.sendKeys(s);
 //        Create_Account_pg_Email_and_Password_Form createAccInput = new Create_Account_pg_Email_and_Password_Form();
 //        createAccInput.checkInputFields_inputsAreFilledIn_PpNotChanges()
        WebElement password = driver.findElement(By.id("password"));
-        password.sendKeys(TestConfig.PASSWORD);
+        password.sendKeys(InputFormTestConfig.PASSWORD);
         WebElement eyeButton = driver.findElement(By.xpath("//button[@data-test-id=\"viewBox\"]"));
         eyeButton.click();
         Thread.sleep(1500);
 
 //        WebElement inputWrapper = driver.findElement(By.xpath(CreateAccount_Test_1_var));//"input-wrap"
-        WebElement inputWrapper = driver.findElement(By.xpath(TestConfig.ELEMENT_FOR_TEST));//"input-wrap"
+        WebElement inputWrapper = driver.findElement(By.xpath(InputFormTestConfig.ELEMENT_FOR_TEST));//"input-wrap"
 
         try {
             File screenshotFile = inputWrapper.getScreenshotAs(OutputType.FILE);

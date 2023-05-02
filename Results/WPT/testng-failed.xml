@@ -23,7 +23,7 @@
     <classes>
       <class name="CreateAccount_Page.En.By_Element_Test_1_En">
         <methods>
-          <include name="mainCode" invocation-numbers="0"/>
+          <include name="inputFormTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- CreateAccount_Page.En.By_Element_Test_1_En -->
     </classes>
